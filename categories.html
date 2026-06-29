@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop by Category — Women's Fashion Picks | StyleNest</title>
+  <meta name="description" content="Browse curated women's fashion picks by category. Dresses, bags, shoes, accessories, tops, and outerwear — all with affiliate links to Amazon.">
+  <link rel="canonical" href="https://yourdomain.com/categories.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="categories">
+
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a class="nav__logo" href="index.html"><span>Style</span>Nest</a>
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="page-hero">
+      <div class="container">
+        <p class="page-hero__breadcrumb"><a href="index.html">Home</a> › Categories</p>
+        <h1>Shop by Category</h1>
+        <p>Browse every style. Filter by category to find exactly what you're looking for.</p>
+      </div>
+    </div>
+
+    <!-- Category overview cards -->
+    <section class="section section--stone">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Explore</span>
+          <h2>Every Category</h2>
+          <span class="section-header__line"></span>
+        </div>
+
+        <div class="cat-full-grid">
+          <div class="cat-full-card reveal reveal-delay-1" onclick="filterByCategory('dresses')" tabindex="0" role="button">
+            <div class="cat-full-card__icon">👗</div>
+            <h3>Dresses</h3>
+            <p>From casual sundresses to elegant evening gowns — shop our curated dress edit.</p>
+            <span class="cat-full-card__link">Shop Dresses →</span>
+          </div>
+          <div class="cat-full-card reveal reveal-delay-2" onclick="filterByCategory('bags')" tabindex="0" role="button">
+            <div class="cat-full-card__icon">👜</div>
+            <h3>Bags & Handbags</h3>
+            <p>Totes, shoulder bags, crossbodies, and clutches — the season's best picks.</p>
+            <span class="cat-full-card__link">Shop Bags →</span>
+          </div>
+          <div class="cat-full-card reveal reveal-delay-3" onclick="filterByCategory('shoes')" tabindex="0" role="button">
+            <div class="cat-full-card__icon">👠</div>
+            <h3>Shoes</h3>
+            <p>Heels, sneakers, boots, and sandals — every pair worth adding to your collection.</p>
+            <span class="cat-full-card__link">Shop Shoes →</span>
+          </div>
+          <div class="cat-full-card reveal reveal-delay-4" onclick="filterByCategory('accessories')" tabindex="0" role="button">
+            <div class="cat-full-card__icon">💍</div>
+            <h3>Accessories</h3>
+            <p>Jewellery, scarves, belts, and sunglasses — the finishing touches that elevate any look.</p>
+            <span class="cat-full-card__link">Shop Accessories →</span>
+          </div>
+          <div class="cat-full-card reveal reveal-delay-1" onclick="filterByCategory('tops')" tabindex="0" role="button">
+            <div class="cat-full-card__icon">👚</div>
+            <h3>Tops & Basics</h3>
+            <p>Elevated basics and standout tops to anchor every outfit in your wardrobe.</p>
+            <span class="cat-full-card__link">Shop Tops →</span>
+          </div>
+          <div class="cat-full-card reveal reveal-delay-2" onclick="filterByCategory('outerwear')" tabindex="0" role="button">
+            <div class="cat-full-card__icon">🧥</div>
+            <h3>Outerwear</h3>
+            <p>Coats, jackets, and blazers — investment pieces that outlast every trend.</p>
+            <span class="cat-full-card__link">Shop Outerwear →</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products with filter -->
+    <section class="section" id="products-section" aria-labelledby="products-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Curated Picks</span>
+          <h2 id="products-heading">All Products</h2>
+          <p>Filter by category. Click any product to shop on Amazon.</p>
+          <span class="section-header__line"></span>
+        </div>
+
+        <div class="blog-filter" role="group" aria-label="Filter products">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="dresses">Dresses</button>
+          <button class="filter-btn" data-filter="bags">Bags</button>
+          <button class="filter-btn" data-filter="shoes">Shoes</button>
+          <button class="filter-btn" data-filter="accessories">Accessories</button>
+          <button class="filter-btn" data-filter="tops">Tops</button>
+          <button class="filter-btn" data-filter="outerwear">Outerwear</button>
+        </div>
+
+        <div class="products__grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="nav__logo" href="index.html">Elle <em style="font-style:italic;color:var(--accent);font-weight:300">&</em> Co.</a>
+          <p>Your trusted guide to effortless, affordable women's fashion.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Pinterest">PT</a>
+            <a href="#" aria-label="TikTok">TK</a>
+          </div>
+        </div>
+        <div class="footer__col"><h4>Shop</h4><ul>
+          <li><a href="categories.html">All Products</a></li>
+          <li><a href="categories.html?cat=dresses">Dresses</a></li>
+          <li><a href="categories.html?cat=bags">Bags</a></li>
+        </ul></div>
+        <div class="footer__col"><h4>Blog</h4><ul>
+          <li><a href="blog.html">All Posts</a></li>
+        </ul></div>
+        <div class="footer__col"><h4>Info</h4><ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="affiliate-disclosure.html">Disclosure</a></li>
+          <li><a href="privacy-policy.html">Privacy</a></li>
+        </ul></div>
+      </div>
+      <div class="footer__disclosure">
+        <strong>Affiliate Disclosure:</strong> As an Amazon Associate I earn from qualifying purchases at no extra cost to you.
+        <a href="affiliate-disclosure.html">Read full disclosure →</a>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 StyleNest All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">↑</button>
+  <script src="js/main.js"></script>
+  <script>
+    function filterByCategory(cat) {
+      const btn = document.querySelector(`.filter-btn[data-filter="${cat}"]`);
+      if (btn) {
+        btn.click();
+        document.getElementById('products-section').scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(location.search);
+      const cat = params.get('cat');
+      if (cat) filterByCategory(cat);
+    });
+  </script>
+</body>
+</html>

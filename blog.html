@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Style Guides & Fashion Reviews | StyleNest</title>
+  <meta name="description" content="Honest fashion reviews, curated style guides, and Amazon picks to help you dress with confidence and intention.">
+  <link rel="canonical" href="https://yourdomain.com/blog.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="blog">
+
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a class="nav__logo" href="index.html"><span>Style</span>Nest</a>
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="page-hero">
+      <div class="container">
+        <p class="page-hero__breadcrumb"><a href="index.html">Home</a> › Blog</p>
+        <h1>The Style Journal</h1>
+        <p>Fashion guides, honest reviews, and shoppable picks to make getting dressed feel effortless.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="blog-layout">
+
+          <!-- Main column -->
+          <div>
+            <div class="blog-filter" role="group" aria-label="Filter by category">
+              <button class="filter-btn active" data-tag="all">All</button>
+              <button class="filter-btn" data-tag="Style Guide">Style Guides</button>
+              <button class="filter-btn" data-tag="Reviews">Reviews</button>
+              <button class="filter-btn" data-tag="Amazon Picks">Amazon Picks</button>
+              <button class="filter-btn" data-tag="Fashion Tips">Fashion Tips</button>
+              <button class="filter-btn" data-tag="Trends">Trends</button>
+            </div>
+            <div class="blog__grid" id="all-blog-posts" aria-live="polite"></div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <div class="sidebar__block">
+              <h4>Recent Posts</h4>
+              <div class="sidebar__recent" id="sidebar-recent"></div>
+            </div>
+
+            <div class="sidebar__block">
+              <h4>Browse Tags</h4>
+              <div class="sidebar__tags">
+                <span class="sidebar__tag">Dresses</span>
+                <span class="sidebar__tag">Summer</span>
+                <span class="sidebar__tag">Bags</span>
+                <span class="sidebar__tag">Shoes</span>
+                <span class="sidebar__tag">Under $50</span>
+                <span class="sidebar__tag">Amazon Finds</span>
+                <span class="sidebar__tag">Capsule Wardrobe</span>
+                <span class="sidebar__tag">Workwear</span>
+                <span class="sidebar__tag">Accessories</span>
+                <span class="sidebar__tag">Sale Picks</span>
+              </div>
+            </div>
+
+            <div class="sidebar__block">
+              <h4>Newsletter</h4>
+              <p style="font-size:0.82rem;margin-bottom:1rem;color:var(--text-mid)">Weekly finds in your inbox every Thursday.</p>
+              <form class="newsletter__form" novalidate style="gap:0.5rem">
+                <input class="newsletter__input" type="email" placeholder="your@email.com" required style="margin-bottom:0.5rem">
+                <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center">Subscribe</button>
+              </form>
+            </div>
+
+            <div class="sidebar__block" style="background:var(--near-black);text-align:center">
+              <span class="eyebrow" style="color:var(--accent);display:block;margin-bottom:0.75rem">Featured</span>
+              <p style="font-size:0.82rem;color:rgba(255,255,255,0.5);margin-bottom:1.2rem">Shop my curated Amazon storefront — updated weekly.</p>
+              <a href="https://www.amazon.com/shop/YOURHANDLE?tag=YOURTAG-20"
+                 class="btn btn--ghost"
+                 style="width:100%;justify-content:center"
+                 target="_blank" rel="noopener nofollow">
+                Shop My Amazon →
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="nav__logo" href="index.html">Elle <em style="font-style:italic;color:var(--accent);font-weight:300">&</em> Co.</a>
+          <p>Your trusted guide to effortless, affordable women's fashion.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Pinterest">PT</a>
+            <a href="#" aria-label="TikTok">TK</a>
+          </div>
+        </div>
+        <div class="footer__col"><h4>Shop</h4><ul>
+          <li><a href="categories.html">All Products</a></li>
+          <li><a href="categories.html?cat=dresses">Dresses</a></li>
+          <li><a href="categories.html?cat=bags">Bags</a></li>
+        </ul></div>
+        <div class="footer__col"><h4>Blog</h4><ul>
+          <li><a href="blog.html">All Posts</a></li>
+        </ul></div>
+        <div class="footer__col"><h4>Info</h4><ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="affiliate-disclosure.html">Disclosure</a></li>
+          <li><a href="privacy-policy.html">Privacy</a></li>
+        </ul></div>
+      </div>
+      <div class="footer__disclosure">
+        <strong>Affiliate Disclosure:</strong> As an Amazon Associate I earn from qualifying purchases.
+        <a href="affiliate-disclosure.html">Read full disclosure →</a>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 StyleNest All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">↑</button>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sidebar = document.getElementById('sidebar-recent');
+      if (!sidebar) return;
+      BLOG_POSTS.slice(0, 4).forEach(post => {
+        const item = document.createElement('div');
+        item.className = 'sidebar__recent-item';
+        item.innerHTML = `
+          <div class="sidebar__recent-img">${post.emoji}</div>
+          <div>
+            <a class="sidebar__recent-title" href="${post.url}">${post.title}</a>
+            <p class="sidebar__recent-date">${post.date}</p>
+          </div>`;
+        sidebar.appendChild(item);
+      });
+    });
+  </script>
+</body>
+</html>
