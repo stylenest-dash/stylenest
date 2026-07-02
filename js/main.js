@@ -380,7 +380,17 @@ const BLOG_POSTS = [
     excerpt: "From micro bags to oversized totes, here's what's on every fashion editor's arm this season.",
     date: "May 18, 2025", tag: "Trends", emoji: "👜",
     slug: "bag-trends-2025", url: "#"
-  }
+  },
+{
+  id: 7,
+  title: "10 Best Summer Dresses Under $50 (2026)",
+  excerpt: "Discover 10 stylish and affordable summer dresses that look far more expensive than they cost.",
+  date: "July 2, 2026",
+  tag: "Summer Dresses",
+  image: "images/summer-dresses.jpeg",
+  slug: "10-best-summer-dresses-under-$50",
+  url: "blog-summer-dresses-2026.html"
+},
 ];
 
 /* ── 3. HELPERS ─────────────────────────────────────────────── */
