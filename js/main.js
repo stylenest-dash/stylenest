@@ -386,7 +386,7 @@ const BLOG_POSTS = [
   title: "10 Best Summer Dresses Under $50 (2026)",
   excerpt: "Discover 10 stylish and affordable summer dresses that look far more expensive than they cost.",
   date: "July 2, 2026",
-  tag: "Summer Dresses",
+  tag: "Style Guide",
   image: "images/summer-dresses.jpeg",
   slug: "10-best-summer-dresses-under-$50",
   url: "blog-summer-dresses-2026.html"
@@ -456,8 +456,12 @@ function createBlogCard(post) {
   card.className = 'blog-card reveal';
   card.innerHTML = `
     <div class="blog-card__img-wrap">
-      <div class="blog-card__img-placeholder">${post.emoji}</div>
-    </div>
+  ${
+    post.image
+      ? <img class="blog-card__img" src="${post.image}" alt="${post.title}">
+      : <div class="blog-card__img-placeholder">${post.emoji || "📰"}</div>
+  }
+</div>
     <div class="blog-card__body">
       <div class="blog-card__meta">
         <span class="blog-card__tag">${post.tag}</span>
